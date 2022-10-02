@@ -24,6 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run a one-line script
-        run: run scrapping.py
+        run: python3 scrapping.py
       # Commit new changes
       - uses: stefanzweifel/git-auto-commit-action@v4
