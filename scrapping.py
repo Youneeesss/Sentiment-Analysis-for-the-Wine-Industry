@@ -19,7 +19,7 @@ def total_pages(url):
     pages = int(pages)    # 'pages' is the total number of pages
     return pages
 
-print(total_pages('https://www.winemag.com/?s=&rating=98.0-*&drink_type=wine&page=1&search_type=reviews'))
+print(total_pages('https://www.winemag.com/?s=&search_type=reviews&drink_type=wine&price=20-40'))
 
 #Function to parse each item's page
 def help_retrieve(dic,key):
@@ -165,6 +165,8 @@ def scrape_url_list(urls, file_name="raw_data.csv"):
     
     return df
 
-urls = ['https://www.winemag.com/?s=&rating=98.0-*&drink_type=wine&page=1&search_type=reviews']
+urls = ['https://www.winemag.com/?s=&search_type=reviews&drink_type=wine&price=20-40']
 
 df = scrape_url_list(urls)
+
+df.head(10)
