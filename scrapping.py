@@ -168,5 +168,3 @@ def scrape_url_list(urls, file_name="raw_data.csv"):
 urls = ['https://www.winemag.com/?s=&rating=98.0-*&drink_type=wine&page=1&search_type=reviews']
 
 df = scrape_url_list(urls)
-
-df.head(10)
